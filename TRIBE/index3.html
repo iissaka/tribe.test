@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Carte d'Identité</title>
+    <!-- Lien pour les icônes et la police -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Capture et Validation de la Carte d'Identité</h2>
+
+        <!-- Section pour la capture d'image -->
+        <div id="camera-section" class="card">
+            <video id="video" width="320" height="240" autoplay></video>
+            <button id="capture" class="btn-primary">Prendre la photo</button>
+            <canvas id="canvas" style="display:none;"></canvas>
+            <img id="photo" alt="Votre photo apparaîtra ici" />
+        </div>
+
+        <!-- Section de validation des données -->
+        <div id="validation-section" class="card" style="display:none;">
+            <h3>Validation des Informations</h3>
+            
+            <div class="field">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" value="Jaloud Sani" readonly>
+                <label class="checkbox"><input type="checkbox" id="nom-correct" /> Correct</label>
+            </div>
+
+            <div class="field">
+                <label for="numero-carte">Numéro de carte :</label>
+                <input type="text" id="numero-carte" value="123456789" readonly>
+                <label class="checkbox"><input type="checkbox" id="numero-carte-correct" /> Correct</label>
+            </div>
+
+            <div class="field">
+                <label for="date-naissance">Date de naissance :</label>
+                <input type="text" id="date-naissance" value="01/01/1985" readonly>
+                <label class="checkbox"><input type="checkbox" id="date-naissance-correct" /> Correct</label>
+            </div>
+
+            <div class="field">
+                <label for="adresse">Adresse :</label>
+                <input type="text" id="adresse" value="Rue de Plateau, Niamey" readonly>
+                <label class="checkbox"><input type="checkbox" id="adresse-correct" /> Correct</label>
+            </div>
+
+            <div class="field">
+                <label for="date-expiration">Date d'expiration :</label>
+                <input type="text" id="date-expiration" value="01/01/2030" readonly>
+                <label class="checkbox"><input type="checkbox" id="date-expiration-correct" /> Correct</label>
+            </div>
+
+            <button id="valider" class="btn-success">Valider les informations</button>
+        </div>
+
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>

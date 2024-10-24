@@ -1,0 +1,118 @@
+/* Styles généraux */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color:red;
+    padding: 10px;
+    color: white;
+}
+
+.back-icon {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.page-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Rubrique de contact */
+.contact-section {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 15px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.input-box {
+    margin-top: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #f7f9fc;
+    box-sizing: border-box;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: red;
+}
+
+/* Styles pour les boutons radio verrouillés */
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+}
+
+.radio-group input {
+    margin-right: 10px;
+}
+
+.radio-group i {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+/* Conteneur des détails de l'abonnement */
+.form-container {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 15px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Bouton de soumission */
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: red;
+}

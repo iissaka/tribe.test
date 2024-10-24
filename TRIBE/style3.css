@@ -1,0 +1,119 @@
+/* Police globale */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Section de capture et validation */
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#camera-section {
+    text-align: center;
+}
+
+#photo {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+}
+
+/* Champs et étiquettes */
+.field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+}
+
+input[type="text"] {
+    width: 65%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    color: #333;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #00aaff;
+}
+
+/* Styles pour les boutons */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: red;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #a0cc00;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Style des checkbox */
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input {
+    margin-right: 8px;
+}
+
+/* Effet de transition sur les champs */
+input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
